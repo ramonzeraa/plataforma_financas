@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link class="nav-link" to="/dashboard">Dashboard</router-link>
         </li>
@@ -28,13 +28,40 @@
           >
         </li>
       </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Perfil
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdown"
+          >
+            <li>
+              <router-link class="dropdown-item" to="/profile"
+                >Perfil</router-link
+              >
+            </li>
+            <li>
+              <router-link class="dropdown-item" to="/login">Login</router-link>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </nav>
 </template>
 
 <script>
 export default {
-  name: 'NavbarGeral',
+  name: 'NavbarAll',
 };
 </script>
 
